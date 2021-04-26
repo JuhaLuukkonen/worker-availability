@@ -1,6 +1,6 @@
 # Worker availability - Juha Luukkonen
 
-React form for adding employee availability by using Material UI dialogs: https://material-ui.com/components/dialogs/ 
+React form for adding employee or worker availability by using Material UI dialogs: https://material-ui.com/components/dialogs/ 
 
 TODO: 
 
