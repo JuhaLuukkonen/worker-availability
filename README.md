@@ -2,9 +2,13 @@
 
 React form for adding employee or worker availability by using Material UI dialogs: https://material-ui.com/components/dialogs/ 
 
+and React Hooks Form
+
+https://react-hook-form.com/
+
 TODO: 
 
-1.) rendered data from RowsDialog to display list
+1.) rendered data from ButtonsResult.js to display list
 
 2.) UI style
 
