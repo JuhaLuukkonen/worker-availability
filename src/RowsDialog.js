@@ -4,8 +4,6 @@ import { useForm, Controller } from "react-hook-form";
 import { Input } from "@material-ui/core";
 import ButtonsResult from "./ButtonsResult";
 import TextField from '@material-ui/core/TextField';
-
-
 import "./RowsStyles.css";
 
 const RowsDialog = () => {
@@ -56,9 +54,7 @@ const RowsDialog = () => {
         addColoums={({ field }) => <RowsDialog {...field} />}
         className="materialUIInput"
         type="number"
-        InputLabelProps={{
-            shrink: true,
-        }}
+        InputLabelProps={{ }}
       />
       <label>Availability</label>
       <Controller

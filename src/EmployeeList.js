@@ -8,8 +8,9 @@ import SwapHorizIcon from "@material-ui/icons/SwapHoriz";
 import DeleteIcon from "@material-ui/icons/Delete";
 import users from "./stub.json";
 import RowsDialog from "./RowsDialog";
+import "./styles.css";
 
-const addColoums = (() => ({
+const addColumns = ((...data) => ({
   field: {
       render: [
         {firstname: 'firstName', 
@@ -99,7 +100,7 @@ const EmployeeList = () => (
     <ReactMUIDatatable
       title={""}                      
       render={({ field }) => <RowsDialog {...field} />}
-      addColoums={addColoums}      
+      addColumns={addColumns}      
       rows={rows}      
       data={users}
       columns={columns}
