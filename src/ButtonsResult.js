@@ -5,15 +5,15 @@ export default ({ data, reset, setValue }) => {
   return (
     <>
       {data && (
-        <pre style={{ textAlign: "left", color: "white" }}>
+        <pre style={{ textAlign: "left", color: "black" }}>
           {JSON.stringify(
             {
               ...data, 
-              firstname: '', 
-              lastname: '', 
-              jobtitle: '', 
-              age:'', 
-              availability: ''              
+              Firstname: '', 
+              Lastname: '', 
+              Jobtitle: '',
+              Age:'', 
+              Availability: ''             
                 .text
             },
             null,
