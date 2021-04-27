@@ -88,7 +88,7 @@ const setValue = [
   {firstname: '', lastName: '', jobTitle: '', age:'', availability: ''}
 ]
 
-const Demo = () => (
+const EmployeeList = () => (
   <div className={"App"}> 
     <RowsDialog 
       data={data}
@@ -109,4 +109,4 @@ const Demo = () => (
   </div>
 );
 
-export default Demo;
+export default EmployeeList;
