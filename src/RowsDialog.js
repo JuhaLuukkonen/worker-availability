@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Select from "react-select";
 import { useForm, Controller } from "react-hook-form";
 import { Input } from "@material-ui/core";
-import Age from "react-number-format";
 import ButtonsResult from "./ButtonsResult";
+import TextField from '@material-ui/core/TextField';
+
 
 import "./RowsStyles.css";
 
@@ -46,13 +47,18 @@ const RowsDialog = () => {
         className="materialUIInput"
       />
       <label>Age</label>
-      <Controller
-        render={({ field }) => <Age {...field} />}
+      <TextField
+        render={({ field }) => <Input {...field} />}
         name="age"
+        id="standard-number"
         control={control}
         defaultValues={defaultValues}
         addColoums={({ field }) => <RowsDialog {...field} />}
-        className="input"
+        className="materialUIInput"
+        type="number"
+        InputLabelProps={{
+            shrink: true,
+        }}
       />
       <label>Availability</label>
       <Controller
@@ -70,6 +76,7 @@ const RowsDialog = () => {
         )}
         control={control}
         defaultValue=""
+        className="materialUIInput"
       />
       <ButtonsResult {...{ data, reset, setValue }} />        
     </form>
