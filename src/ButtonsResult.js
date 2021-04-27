@@ -38,4 +38,3 @@ export default ({ data, reset, setValue }) => {
     </>
   );
 };
-//export default ButtonsResult;
