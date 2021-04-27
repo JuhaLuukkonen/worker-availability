@@ -1,5 +1,5 @@
 import React from "react";
-import { convertToRaw, EditorState } from "draft-js";
+//import { convertToRaw, EditorState } from "draft-js";
 
 export default ({ data, reset, setValue }) => {
   return (
@@ -8,10 +8,10 @@ export default ({ data, reset, setValue }) => {
         <pre style={{ textAlign: "left", color: "white" }}>
           {JSON.stringify(
             {
-              ...data,
+              ...data, 
               firstname: '', 
-              lastName: '', 
-              jobTitle: '', 
+              lastname: '', 
+              jobtitle: '', 
               age:'', 
               availability: ''              
                 .text
