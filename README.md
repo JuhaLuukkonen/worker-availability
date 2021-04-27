@@ -37,7 +37,7 @@ worker-availability-main
     App.css
     App.js
     ButtonsResult.js
-    Demo.js
+    EmployeeList.js
     Index.css
     Index.js
     logo.svg
