@@ -1,5 +1,4 @@
 import React from "react";
-//import { convertToRaw, EditorState } from "draft-js";
 
 export default ({ data, reset, setValue }) => {
   return (
@@ -27,7 +26,9 @@ export default ({ data, reset, setValue }) => {
         type="button"
         onClick={() => {
           reset({
-               
+            TextField: "",
+            ReactSelect: { value: "available", label: "Available" },
+            numberFormat: 123456789,   
           });
         }}
       >
@@ -37,3 +38,4 @@ export default ({ data, reset, setValue }) => {
     </>
   );
 };
+//export default ButtonsResult;
